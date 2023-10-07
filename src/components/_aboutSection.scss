@@ -1,0 +1,14 @@
+#about {
+    .languages {
+        padding: 0 0 2rem 2.5rem;
+    
+        li {
+            list-style-type: none;
+            font-size: 19px;
+    
+            span {
+                color: $second_color;
+            }
+        }
+    }
+}

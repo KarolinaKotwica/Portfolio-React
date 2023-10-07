@@ -1,0 +1,10 @@
+.App {
+    display: flex;
+    overflow: hidden;
+    
+    main {
+        margin-left: 20rem;
+        flex: 1;
+        overflow-y: auto;
+    }
+}

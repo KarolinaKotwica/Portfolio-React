@@ -1,0 +1,12 @@
+#portfolio {
+    padding-bottom: 3rem;
+
+    .projects {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin-bottom: 3em;
+    }
+}

@@ -1,0 +1,22 @@
+.certificates {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 auto;
+
+    img {
+        width: 100%;
+        margin: 0 auto;
+        padding: 2em;
+    }
+
+    .slide-left {
+        animation: left-to-right 3s linear;
+    }
+
+    .slide-right {
+        animation: right-to-left 3s linear;
+    }
+}

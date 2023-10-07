@@ -1,0 +1,27 @@
+#hamburger-menu {
+    height: 0;
+}
+
+.menu_box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    left: -100%;
+    top: 0;
+  
+    width: 18rem;
+    height: 100%;
+  
+    margin: 0;
+    padding: 20px 20px;
+    text-align:center;
+  
+    list-style: none;
+    z-index: 1;
+  
+    background-color: $second_color;
+    box-shadow: 1px 0px 6px rgba($color-black, .2);
+  
+    transition-duration: .25s;
+    -webkit-font-smoothing: antialiased;
+}

@@ -1,0 +1,38 @@
+// Animation bubbles
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg) translateX(0);                                                                        
+        opacity: 1;
+        border-radius: 45%;
+    }
+
+    100%{
+        opacity: 0;
+        transform: translateY(-1000px) rotate(720deg) translateX(300px);
+        border-radius: 50%;
+    }
+
+}
+
+// Animation skills
+@keyframes margin-right {
+    0% { margin-right: -20rem; transform: rotateY(0deg); }
+    100% { margin-right: 0; transform: rotateY(360deg); }
+}
+
+@keyframes margin-left {
+    0% { margin-left: -20rem; transform: rotateY(0deg); }
+    100% { margin-left: 0; transform: rotateY(740deg); }
+}
+
+// Animation certificates
+@keyframes left-to-right {
+    0% { opacity: 0; margin-left: -40rem; }
+    100% { opacity:1; margin-left: 0; }
+}
+
+@keyframes right-to-left {
+    0% { opacity: 0; margin-right: -40rem; }
+    100% { opacity:1; margin-right: 0; }
+}

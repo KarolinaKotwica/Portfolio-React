@@ -1,0 +1,21 @@
+@import "src/sass/app";
+@import "src/sass/variables";
+@import "src/sass/animation";
+@import "src/sass/functions";
+@import "src/sass/global";
+@import "src/sass/mixins";
+@import "src/sass/typography";
+@import "src/sass/typography";
+
+@import "../components/navbar";
+@import "../components/HamburgerMenu/hamburgerMenu";
+@import "../components/MenuList/menuList";
+@import "../components/Profile/profile";
+
+@import "../components/homeSection";
+@import "../components/aboutSection";
+@import "../components/skillsSection";
+@import "../components/portfolioSection";
+@import "../components/Project/project";
+@import "../components/certificatesSection";
+@import "../components/contactSection";

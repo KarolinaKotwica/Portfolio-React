@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento&display=swap');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+*::selection {
+    color: $main_color;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $color-white-dark;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+}

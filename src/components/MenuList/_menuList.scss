@@ -1,0 +1,30 @@
+.menu_item {
+    display: flex;
+    align-items: center;
+    padding: .7rem 3rem;
+    margin-bottom: 5px;
+  
+    color: $color-white;
+
+    font-size: 1.1rem;
+    font-weight: 600;
+  
+    text-decoration: none;
+  
+    transition-duration: .25s;
+    cursor: pointer;
+
+    &:hover {
+        color: $main_color;
+    }
+}
+
+.fas {
+    margin-right: 1rem;
+}
+
+.links {
+    &:first-of-type {
+        margin-top: 2rem;
+    }
+}

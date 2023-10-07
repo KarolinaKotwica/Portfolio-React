@@ -1,0 +1,11 @@
+.center {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+
+    img {
+        max-width: 20rem;
+        height: auto;
+    }
+}

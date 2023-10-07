@@ -1,0 +1,26 @@
+.skill {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 3em;
+    z-index: 1;
+
+    img {
+        width: 135px;
+        height: auto;
+        margin: 1em;
+    }
+
+    .rotate {
+
+        &:nth-child(2n) {
+            animation: margin-right 1.4s ease;
+        }
+
+        &:nth-child(2n + 1) {
+            animation: margin-left 1.4s ease;
+        }
+    }
+}
