@@ -28,9 +28,16 @@
   
     width: 26px;
     height: 26px;
+
+    display: none;
   
     cursor: pointer;
     z-index: 2;
+
+    @include respond(phone)  {
+        display: block;
+        top: 25px;
+    }
 }
 
 .menu_btn > span,

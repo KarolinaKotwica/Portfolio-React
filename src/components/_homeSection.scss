@@ -109,15 +109,50 @@
     color: $color-white;
     padding: 5rem;
 
+    // @include respond(phone)  {
+    //     padding: 6rem 1rem
+    // }
+    // @include respond(tab-port)  {
+    //     padding: 6rem 0 0 1rem
+    // }
+    // @include respond(desktop)  {
+    //     padding: 6rem 0 0 3rem
+    // }
+
+
     p {
         display: block;
         padding: 1rem 0 0 6rem;
         font-family: 'Quattrocento', serif;
         font-size: 1.5rem;
+
+        // @include respond(phone)  {
+        //     padding: 1rem 0 0 4rem;
+        //     font-size: 1.2rem;
+        // }
+        // @include respond(tab-port)  {
+        //     font-size: 1.2rem;
+        //     padding: 1rem 0 0 7rem;
+        // }
+        // @include respond(desktop)  {
+        //     padding: 1rem 0 0 9rem
+        // }
+
     }
 
     h1 {
         padding: 0;
         font-size: 2.5rem;
+        padding-left: 2.5rem;
+
+        // @include respond(phone)  {
+        //     font-size: 1.9rem;
+        // }
+
+        // @include respond(tab-port)  {
+        //     padding-left: 4.5rem;
+        //     font-size: 2.5rem;
+        // }
+
     }
 }

@@ -1,6 +1,18 @@
 #about {
     .languages {
-        padding: 0 0 2rem 2.5rem;
+        padding: 0 0 2rem 4.5rem;
+
+        @include respond(tab-land)  {
+            // padding: 0 0 2rem 10rem;
+        }
+
+        @include respond(tab-port)  {
+            // padding: 0 0 2rem 6.9rem;
+        }  
+
+        @include respond(phone)  {
+            // padding: 0 0 2rem 2rem;
+        }
     
         li {
             list-style-type: none;

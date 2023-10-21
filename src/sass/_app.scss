@@ -1,10 +1,24 @@
 .App {
     display: flex;
-    overflow: hidden;
-    
+    flex-direction: column;
+    width: 100%;
+
     main {
-        margin-left: 20rem;
-        flex: 1;
-        overflow-y: auto;
+        width: 80%;
+        margin-left: 18rem;
+        
+        @include respond(phone)  {
+            margin-left: 0;
+        }
+        @include respond(tab-port)  {
+            // margin-left: 11rem;
+        }
+        @include respond(tab-land)  {
+            // margin-left: 11rem;
+        }
+        @include respond(desktop)  {
+            // margin-left: 15rem;
+        }
+
     }
 }

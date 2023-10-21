@@ -9,7 +9,7 @@
     left: -100%;
     top: 0;
   
-    width: 18rem;
+    width: 20%;
     height: 100%;
   
     margin: 0;
@@ -24,4 +24,20 @@
   
     transition-duration: .25s;
     -webkit-font-smoothing: antialiased;
+
+    @include respond(phone)  {
+        width: 100%;
+        padding: 20px 0;
+    }
+    @include respond(tab-port)  {
+        width: 15rem;
+        padding: 20px 0;
+    }
+    @include respond(desktop)  {
+        width: 20rem;
+        padding: 20px 0;
+    }
+
+
+
 }

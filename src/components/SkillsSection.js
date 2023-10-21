@@ -24,7 +24,7 @@ const SkillsSection = () => {
             <h1>Skills</h1>
             <p>Skills that I know and still develop:</p>
 
-            <div className="skill left-animation">
+            <div className="skill">
                 <img className={startAnimation && "rotate"} src="imgs/icons/html.png" alt="html" />
                 <img className={startAnimation && "rotate"} src="imgs/icons/css.png" alt="css" />
                 <img className={startAnimation && "rotate"} src="imgs/icons/js.png" alt="JavaScript" />
@@ -32,9 +32,9 @@ const SkillsSection = () => {
                 <img className={startAnimation && "rotate"} src="imgs/icons/mysqlx.png" alt="mySQL" />
                 <img className={startAnimation && "rotate"} src="imgs/icons/git.png" alt="Git" />
             </div>
-#
+
             <p>Skills that I still need to improve:</p>
-            <div className="skill right-animation">
+            <div className="skill">
                 <img className={startAnimation && "rotate"} src="imgs/icons/react.png" alt="React" />
                 <img className={startAnimation && "rotate"} src="imgs/icons/nodejs.png" alt="Node.js" />
                 <img className={startAnimation && "rotate"} src="imgs/icons/jquery.png" alt="jQuery" />

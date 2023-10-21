@@ -1,11 +1,21 @@
 .skill {
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     margin-bottom: 3em;
     z-index: 1;
+
+    // @include respond(tab-port)  {
+    //     width: 70%;
+    //     // margin: 2.5rem auto 3em 6rem;
+    // }
+    // @include respond(tab-land)  {
+    //     width: 80%;
+    //     // margin: 2rem auto 3em 9rem;
+    // }
+
 
     img {
         width: 135px;
@@ -16,11 +26,19 @@
     .rotate {
 
         &:nth-child(2n) {
-            animation: margin-right 1.4s ease;
+            animation: margin-right 7s ease;
+
+            @include respond(tab-land)  {
+                animation: none;
+            }
         }
 
         &:nth-child(2n + 1) {
-            animation: margin-left 1.4s ease;
+            animation: margin-left 7s ease;
+            
+            @include respond(tab-land)  {
+                animation: none;
+            }
         }
     }
 }

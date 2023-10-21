@@ -6,17 +6,42 @@
     flex-wrap: wrap;
     margin: 0 auto;
 
+    @include respond(tab-port)  {
+        margin-top: 2rem;
+        max-width: 100%;
+    }
+
+    @include respond(phone)  {
+        width: 90%;
+    }
+
     img {
         width: 100%;
         margin: 0 auto;
         padding: 2em;
+
+        @include respond(phone)  {
+            padding: 1rem 0;
+
+            &:first-of-type {
+                margin-top: 2rem;
+            }
+        }
     }
 
     .slide-left {
         animation: left-to-right 3s linear;
+
+        @media only screen and (min-width: 601px) and (max-width: 703px) {
+            animation: none;
+        }
     }
 
     .slide-right {
         animation: right-to-left 3s linear;
+
+        @media only screen and (min-width: 601px) and (max-width: 703px) {
+            animation: none;
+        }
     }
 }

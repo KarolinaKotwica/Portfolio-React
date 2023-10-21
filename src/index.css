@@ -1,13 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quattrocento&display=swap");
-.App {
-  display: flex;
-  overflow: hidden; }
-  .App main {
-    margin-left: 20rem;
-    flex: 1;
-    overflow-y: auto; }
-
 @keyframes animate {
   0% {
     transform: translateY(0) rotate(0deg) translateX(0);
@@ -61,12 +53,18 @@
   color: #b0228c; }
 
 html {
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden; }
 
 body {
   background-color: #ddd;
   font-family: 'Poppins', sans-serif;
-  font-size: 10px; }
+  font-size: 10px;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden; }
 
 h3 {
   text-align: center;
@@ -91,13 +89,29 @@ section h1::before {
   margin: 1rem; }
 
 section {
-  position: relative; }
+  position: relative;
+  padding-bottom: 1rem; }
   section p {
     font-size: 20px;
-    padding: 2.5rem; }
+    padding: 4.5rem; }
+    @media only screen and (max-width: 600px) {
+      section p {
+        font-size: 1.15rem; } }
+    @media only screen and (min-width: 600px) {
+      section p {
+        font-size: 1.1rem; } }
+    @media only screen and (min-width: 768px) {
+      section p {
+        font-size: 1.2rem; } }
   section h1 {
-    padding: 2em 0 0 1em;
+    padding: 2rem 0 0 3.5rem;
     font-size: 1.8rem; }
+    @media only screen and (max-width: 600px) {
+      section h1 {
+        font-size: 1.6rem; } }
+    @media only screen and (min-width: 992px) {
+      section h1 {
+        padding-top: 3rem; } }
 
 #about,
 #portfolio,
@@ -107,44 +121,16 @@ section {
 a {
   color: #000; }
 
-h3 {
-  text-align: center;
-  padding: 1.7em;
-  font-weight: lighter;
-  font-size: 1.1rem; }
-
-h3::before {
-  content: '<  ';
-  color: #b0228c; }
-
-h3::after {
-  content: '  >';
-  color: #b0228c; }
-
-ul li {
-  list-style-type: none; }
-
-section h1::before {
-  content: '';
-  border-left: 5px solid #b0228c;
-  margin: 1rem; }
-
-section {
-  position: relative; }
-  section p {
-    font-size: 20px;
-    padding: 2.5rem; }
-  section h1 {
-    padding: 2em 0 0 1em;
-    font-size: 1.8rem; }
-
-#about,
-#portfolio,
-#contact {
-  background: #bbb9b9; }
-
-a {
-  color: #000; }
+.App {
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
+  .App main {
+    width: 80%;
+    margin-left: 18rem; }
+    @media only screen and (max-width: 600px) {
+      .App main {
+        margin-left: 0; } }
 
 #hamburger-menu {
   height: 0; }
@@ -155,7 +141,7 @@ a {
   visibility: hidden;
   left: -100%;
   top: 0;
-  width: 18rem;
+  width: 20%;
   height: 100%;
   margin: 0;
   padding: 20px 20px;
@@ -166,6 +152,18 @@ a {
   box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
   transition-duration: .25s;
   -webkit-font-smoothing: antialiased; }
+  @media only screen and (max-width: 600px) {
+    .menu_box {
+      width: 100%;
+      padding: 20px 0; } }
+  @media only screen and (min-width: 600px) {
+    .menu_box {
+      width: 15rem;
+      padding: 20px 0; } }
+  @media only screen and (min-width: 992px) {
+    .menu_box {
+      width: 20rem;
+      padding: 20px 0; } }
 
 #menu_toggle {
   opacity: 0; }
@@ -194,8 +192,13 @@ a {
   left: 20px;
   width: 26px;
   height: 26px;
+  display: none;
   cursor: pointer;
   z-index: 2; }
+  @media only screen and (max-width: 600px) {
+    .menu_btn {
+      display: block;
+      top: 25px; } }
 
 .menu_btn > span,
 .menu_btn > span::before,
@@ -364,10 +367,11 @@ a {
     font-size: 1.5rem; }
   .text h1 {
     padding: 0;
-    font-size: 2.5rem; }
+    font-size: 2.5rem;
+    padding-left: 2.5rem; }
 
 #about .languages {
-  padding: 0 0 2rem 2.5rem; }
+  padding: 0 0 2rem 4.5rem; }
   #about .languages li {
     list-style-type: none;
     font-size: 19px; }
@@ -375,7 +379,7 @@ a {
       color: #2a363f; }
 
 .skill {
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
@@ -387,9 +391,15 @@ a {
     height: auto;
     margin: 1em; }
   .skill .rotate:nth-child(2n) {
-    animation: margin-right 1.4s ease; }
+    animation: margin-right 7s ease; }
+    @media only screen and (min-width: 768px) {
+      .skill .rotate:nth-child(2n) {
+        animation: none; } }
   .skill .rotate:nth-child(2n + 1) {
-    animation: margin-left 1.4s ease; }
+    animation: margin-left 7s ease; }
+    @media only screen and (min-width: 768px) {
+      .skill .rotate:nth-child(2n + 1) {
+        animation: none; } }
 
 #portfolio {
   padding-bottom: 3rem; }
@@ -400,6 +410,8 @@ a {
     justify-content: space-evenly;
     flex-wrap: wrap;
     margin-bottom: 3em; }
+    #portfolio .projects p {
+      padding: 0; }
 
 .project {
   position: relative; }
@@ -463,20 +475,67 @@ a {
   flex-direction: column;
   flex-wrap: wrap;
   margin: 0 auto; }
+  @media only screen and (min-width: 600px) {
+    .certificates {
+      margin-top: 2rem;
+      max-width: 100%; } }
+  @media only screen and (max-width: 600px) {
+    .certificates {
+      width: 90%; } }
   .certificates img {
     width: 100%;
     margin: 0 auto;
     padding: 2em; }
+    @media only screen and (max-width: 600px) {
+      .certificates img {
+        padding: 1rem 0; }
+        .certificates img:first-of-type {
+          margin-top: 2rem; } }
   .certificates .slide-left {
     animation: left-to-right 3s linear; }
+    @media only screen and (min-width: 601px) and (max-width: 703px) {
+      .certificates .slide-left {
+        animation: none; } }
   .certificates .slide-right {
     animation: right-to-left 3s linear; }
+    @media only screen and (min-width: 601px) and (max-width: 703px) {
+      .certificates .slide-right {
+        animation: none; } }
 
 .center {
   width: 80%;
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto; }
+  @media only screen and (min-width: 768px) {
+    .center {
+      width: 70%;
+      margin: 2rem 0 0 9rem; } }
   .center img {
     max-width: 20rem;
     height: auto; }
+    @media only screen and (min-width: 600px) {
+      .center img {
+        width: 70%;
+        margin-top: 2rem; } }
+    @media only screen and (max-width: 600px) {
+      .center img {
+        max-width: 16rem; } }
+    @media only screen and (min-width: 601px) and (max-width: 703px) {
+      .center img {
+        margin-left: 3rem; } }
+
+.contactEmail {
+  font-size: 1.3rem; }
+  @media only screen and (min-width: 600px) {
+    .contactEmail {
+      font-size: 1rem; } }
+  @media only screen and (max-width: 600px) {
+    .contactEmail {
+      font-size: 1rem; } }
+
+@media only screen and (max-width: 600px) {
+  .fa-envelope {
+    margin: 0 auto;
+    display: block;
+    text-align: center; } }

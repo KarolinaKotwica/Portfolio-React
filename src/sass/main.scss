@@ -1,11 +1,10 @@
-@import "src/sass/app";
 @import "src/sass/variables";
 @import "src/sass/animation";
 @import "src/sass/functions";
-@import "src/sass/global";
 @import "src/sass/mixins";
+@import "src/sass/global";
 @import "src/sass/typography";
-@import "src/sass/typography";
+@import "src/sass/app";
 
 @import "../components/navbar";
 @import "../components/HamburgerMenu/hamburgerMenu";
