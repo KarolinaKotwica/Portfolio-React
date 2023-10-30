@@ -97,10 +97,10 @@ section {
     @media only screen and (max-width: 600px) {
       section p {
         font-size: 1.15rem; } }
-    @media only screen and (min-width: 600px) {
+    @media only screen and (min-width: 600px) and (max-width: 767px) {
       section p {
         font-size: 1.1rem; } }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
       section p {
         font-size: 1.2rem; } }
   section h1 {
@@ -109,7 +109,7 @@ section {
     @media only screen and (max-width: 600px) {
       section h1 {
         font-size: 1.6rem; } }
-    @media only screen and (min-width: 992px) {
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
       section h1 {
         padding-top: 3rem; } }
 
@@ -156,11 +156,11 @@ a {
     .menu_box {
       width: 100%;
       padding: 20px 0; } }
-  @media only screen and (min-width: 600px) {
+  @media only screen and (min-width: 600px) and (max-width: 767px) {
     .menu_box {
       width: 15rem;
       padding: 20px 0; } }
-  @media only screen and (min-width: 992px) {
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .menu_box {
       width: 20rem;
       padding: 20px 0; } }
@@ -386,18 +386,33 @@ a {
   flex-wrap: wrap;
   margin-bottom: 3em;
   z-index: 1; }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .skill {
+      margin: 2rem auto 3em 6rem; } }
   .skill img {
     width: 135px;
     height: auto;
     margin: 1em; }
   .skill .rotate:nth-child(2n) {
     animation: margin-right 7s ease; }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (max-width: 600px) {
+      .skill .rotate:nth-child(2n) {
+        animation: none; } }
+    @media only screen and (min-width: 600px) and (max-width: 767px) {
+      .skill .rotate:nth-child(2n) {
+        animation: none; } }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
       .skill .rotate:nth-child(2n) {
         animation: none; } }
   .skill .rotate:nth-child(2n + 1) {
     animation: margin-left 7s ease; }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (max-width: 600px) {
+      .skill .rotate:nth-child(2n + 1) {
+        animation: none; } }
+    @media only screen and (min-width: 600px) and (max-width: 767px) {
+      .skill .rotate:nth-child(2n + 1) {
+        animation: none; } }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
       .skill .rotate:nth-child(2n + 1) {
         animation: none; } }
 
@@ -475,7 +490,7 @@ a {
   flex-direction: column;
   flex-wrap: wrap;
   margin: 0 auto; }
-  @media only screen and (min-width: 600px) {
+  @media only screen and (min-width: 600px) and (max-width: 767px) {
     .certificates {
       margin-top: 2rem;
       max-width: 100%; } }
@@ -507,14 +522,14 @@ a {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto; }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
     .center {
       width: 70%;
       margin: 2rem 0 0 9rem; } }
   .center img {
     max-width: 20rem;
     height: auto; }
-    @media only screen and (min-width: 600px) {
+    @media only screen and (min-width: 600px) and (max-width: 767px) {
       .center img {
         width: 70%;
         margin-top: 2rem; } }
@@ -527,7 +542,7 @@ a {
 
 .contactEmail {
   font-size: 1.3rem; }
-  @media only screen and (min-width: 600px) {
+  @media only screen and (min-width: 600px) and (max-width: 767px) {
     .contactEmail {
       font-size: 1rem; } }
   @media only screen and (max-width: 600px) {
