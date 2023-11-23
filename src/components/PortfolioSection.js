@@ -41,6 +41,13 @@ const PortfolioSection = () => {
         <div class="projects">
 
             <Project 
+                imageSrc="imgs/Projects/hotel-reservation.png"
+                projectLink="https://hotel-reservation-2.netlify.app/"
+                altText="Website Project"
+                description="Simple, pure html, css website project. I used Sass as a preprocessor"
+            />
+
+            <Project 
                 imageSrc="imgs/Projects/Naturos.png"
                 projectLink="https://karolinakotwica.github.io/Website-Natours/"
                 altText="Website Project"
