@@ -40,11 +40,19 @@ const PortfolioSection = () => {
         <h3>HTML, CSS, Javascript</h3>
         <div class="projects">
 
+
+            <Project 
+                imageSrc="imgs/Projects/Project_grid.png"
+                projectLink="https://grid-website-1.netlify.app/"
+                altText="Website Project GRID"
+                description="Simple, pure html, css website project. I used Sass as a preprocessor. Based on GRID CSS"
+            />
+
             <Project 
                 imageSrc="imgs/Projects/hotel-reservation.png"
                 projectLink="https://hotel-reservation-2.netlify.app/"
-                altText="Website Project"
-                description="Simple, pure html, css website project. I used Sass as a preprocessor"
+                altText="Website Project FLEXBOX"
+                description="Simple, pure html, css website project. I used Sass as a preprocessor. Based on CSS FLEXBOX"
             />
 
             <Project 

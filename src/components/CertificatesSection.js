@@ -23,6 +23,7 @@ const CertificatesSection = () => {
         <section id="certificates">
         <h1>Certificates</h1>
         <div class="certificates">
+            <img className={startAnimation && "slide-right"} src="imgs/Certificates/Advance-css.jpg" alt="certificates advances css, grid, flexbox" />
             <img className={startAnimation && "slide-left"} src="imgs/Certificates/seo.jpg" alt="certificates sql, analytics" />
             <img className={startAnimation && "slide-right"} src="imgs/Certificates/sql-mysql_for_data_analytics.jpg" alt="certificates sql, analytics" />
             <img className={startAnimation && "slide-left"} src="imgs/Certificates/sql.jpg" alt="certificates sql" />
