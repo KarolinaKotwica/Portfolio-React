@@ -8,6 +8,8 @@
         justify-content: space-evenly;
         flex-wrap: wrap;
         margin-bottom: 3em;
+        object-fit: cover;
+        object-position: left;
 
         // @include respond(tab-port)  {
         //     width: 100%;
