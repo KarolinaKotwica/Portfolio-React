@@ -41,7 +41,7 @@ const PortfolioSection = () => {
         <div class="projects">
 
             <Project 
-                imageSrc="imgs/Projects/Nail-shine.png"
+                imageSrc="imgs/Projects/nails.png"
                 projectLink="https://karolinakotwica.github.io/Beauty-world-grid/"
                 altText="Website Project GRID"
                 description="Simple, pure html, css website project. I used Sass as a preprocessor. Based on GRID CSS"
