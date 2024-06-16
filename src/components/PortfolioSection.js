@@ -40,6 +40,12 @@ const PortfolioSection = () => {
         <h3>HTML, CSS, Javascript</h3>
         <div class="projects">
 
+            <Project 
+                imageSrc="imgs/Projects/Nail-shine.png"
+                projectLink="https://karolinakotwica.github.io/Beauty-world-grid/"
+                altText="Website Project GRID"
+                description="Simple, pure html, css website project. I used Sass as a preprocessor. Based on GRID CSS"
+            />
 
             <Project 
                 imageSrc="imgs/Projects/Project_grid.png"
