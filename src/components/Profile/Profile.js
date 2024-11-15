@@ -1,7 +1,7 @@
 function Profile() {
   return (
         <div>
-            <img className="avatar" src="imgs/karolinak.jpg" alt="Karolina" />
+            <img className="avatar" src="imgs/karolina.jpg" alt="Karolina" />
             <div className="social-links">
                 <a href="https://codepen.io/Carolina223" target="_blank"><img src="imgs/icons/1298732_codepen_icon.png" alt="" /></a>
                 <a href="https://github.com/KarolinaKotwica" target="_blank"><img src="imgs/icons/GitHub-Mark-32px.png" alt="" /></a>
