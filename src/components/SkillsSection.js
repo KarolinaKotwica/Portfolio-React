@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 
-// const SkillsSection = () => {
+const SkillsSection = () => {
     // const [startAnimation, setStartAnimation] = useState(false);
 
     // useEffect(() => {
@@ -25,23 +25,23 @@ import React, {useState, useEffect} from "react";
             <p>Skills that I know and still develop:</p>
 
             <div className="skill">
-                <img className={startAnimation && "rotate"} src="imgs/icons/html.png" alt="html" />
-                <img className={startAnimation && "rotate"} src="imgs/icons/css.png" alt="css" />
-                <img className={startAnimation && "rotate"} src="imgs/icons/js.png" alt="JavaScript" />
-                <img className={startAnimation && "rotate"} src="imgs/icons/bootstrap.png" alt="bootstrap" />
-                <img className={startAnimation && "rotate"} src="imgs/icons/mysqlx.png" alt="mySQL" />
-                <img className={startAnimation && "rotate"} src="imgs/icons/git.png" alt="Git" />
+                <img className="rotate" src="imgs/icons/html.png" alt="html" />
+                <img className="rotate" src="imgs/icons/css.png" alt="css" />
+                <img className="rotate" src="imgs/icons/js.png" alt="JavaScript" />
+                <img className="rotate" src="imgs/icons/bootstrap.png" alt="bootstrap" />
+                <img className="rotate" src="imgs/icons/mysqlx.png" alt="mySQL" />
+                <img className="rotate" src="imgs/icons/git.png" alt="Git" />
             </div>
 
             <p>Skills that I still need to improve:</p>
             <div className="skill">
-                <img className={startAnimation && "rotate"} src="imgs/icons/react.png" alt="React" />
-                <img className={startAnimation && "rotate"} src="imgs/icons/nodejs.png" alt="Node.js" />
-                <img className={startAnimation && "rotate"} src="imgs/icons/jquery.png" alt="jQuery" />
-                <img className={startAnimation && "rotate"} src="imgs/icons/mongo.png" alt="MongoDB" />
+                <img className="rotate" src="imgs/icons/react.png" alt="React" />
+                <img className="rotate" src="imgs/icons/nodejs.png" alt="Node.js" />
+                <img className="rotate" src="imgs/icons/jquery.png" alt="jQuery" />
+                <img className="rotate" src="imgs/icons/mongo.png" alt="MongoDB" />
             </div>
     </section>
     )
-// }
+}
 
 export default SkillsSection;
