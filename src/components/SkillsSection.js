@@ -1,23 +1,23 @@
 import React, {useState, useEffect} from "react";
 
 const SkillsSection = () => {
-    const [startAnimation, setStartAnimation] = useState(false);
+    // const [startAnimation, setStartAnimation] = useState(false);
 
-    useEffect(() => {
-        const handleScroll = () => {
-            const element = document.querySelector('.skill');
-            const position = element.getBoundingClientRect();
-            if (position.top <= window.innerHeight && position.bottom >= 0) {
-                setStartAnimation(true);
-            }
-        };
+    // useEffect(() => {
+    //     const handleScroll = () => {
+    //         const element = document.querySelector('.skill');
+    //         const position = element.getBoundingClientRect();
+    //         if (position.top <= window.innerHeight && position.bottom >= 0) {
+    //             setStartAnimation(true);
+    //         }
+    //     };
 
-        window.addEventListener("scroll", handleScroll);
+    //     window.addEventListener("scroll", handleScroll);
 
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-        };
-    }, []);
+    //     return () => {
+    //         window.removeEventListener("scroll", handleScroll);
+    //     };
+    // }, []);
 
     return (
         <section id="skills" className="scroll-container">
