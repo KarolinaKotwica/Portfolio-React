@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 
-const SkillsSection = () => {
+// const SkillsSection = () => {
     // const [startAnimation, setStartAnimation] = useState(false);
 
     // useEffect(() => {
@@ -42,6 +42,6 @@ const SkillsSection = () => {
             </div>
     </section>
     )
-}
+// }
 
 export default SkillsSection;
