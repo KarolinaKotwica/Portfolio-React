@@ -25,20 +25,20 @@ const SkillsSection = () => {
             <p>Skills that I know and still develop:</p>
 
             <div className="skill">
-                <img className="rotate" src="imgs/icons/html.png" alt="html" />
-                <img className="rotate" src="imgs/icons/css.png" alt="css" />
-                <img className="rotate" src="imgs/icons/js.png" alt="JavaScript" />
-                <img className="rotate" src="imgs/icons/bootstrap.png" alt="bootstrap" />
-                <img className="rotate" src="imgs/icons/mysqlx.png" alt="mySQL" />
-                <img className="rotate" src="imgs/icons/git.png" alt="Git" />
+                <img src="imgs/icons/html.png" alt="html" />
+                <img src="imgs/icons/css.png" alt="css" />
+                <img src="imgs/icons/js.png" alt="JavaScript" />
+                <img src="imgs/icons/bootstrap.png" alt="bootstrap" />
+                <img src="imgs/icons/mysqlx.png" alt="mySQL" />
+                <img src="imgs/icons/git.png" alt="Git" />
             </div>
 
             <p>Skills that I still need to improve:</p>
             <div className="skill">
-                <img className="rotate" src="imgs/icons/react.png" alt="React" />
-                <img className="rotate" src="imgs/icons/nodejs.png" alt="Node.js" />
-                <img className="rotate" src="imgs/icons/jquery.png" alt="jQuery" />
-                <img className="rotate" src="imgs/icons/mongo.png" alt="MongoDB" />
+                <img src="imgs/icons/react.png" alt="React" />
+                <img src="imgs/icons/nodejs.png" alt="Node.js" />
+                <img src="imgs/icons/jquery.png" alt="jQuery" />
+                <img src="imgs/icons/mongo.png" alt="MongoDB" />
             </div>
     </section>
     )
